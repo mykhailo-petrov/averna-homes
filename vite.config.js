@@ -19,6 +19,7 @@ const htmlImgAlias = {
 };
 
 export default defineConfig({
+	base: './',
 	plugins: [injectHTML(), htmlImgAlias],
 
 	resolve: {
