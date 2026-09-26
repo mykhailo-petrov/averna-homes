@@ -1,0 +1,35 @@
+@use '@scss' as *;
+
+.link {
+	transition: color var(--sss-transition-time);
+
+	&--primary {
+		color: var(--sss-link-primary);
+
+		@media (any-hover: hover) {
+			&:hover {
+				color: var(--sss-link-primary-hover);
+			}
+		}
+
+		&:active {
+			color: var(--sss-link-primary-active);
+		}
+
+		&--active,
+		&._active {
+			color: var(--sss-link-primary-active);
+		}
+	}
+
+	&--secondary {
+		color: var(--sss-link-secondary);
+	}
+
+	&--accent {
+		color: var(--sss-link-accent);
+	}
+
+	&--tertiary {
+	}
+}

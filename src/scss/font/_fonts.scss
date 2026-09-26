@@ -1,0 +1,6 @@
+@use '@scss' as *;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=El%20Messiri:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arsenal:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anek%20Tamil:wght@500&display=swap');
+@include font('icons', 'icons', normal, normal);

@@ -1,0 +1,85 @@
+@use '@scss' as *;
+@use '@scss/font/icons';
+
+.form-container {
+	position: relative;
+
+	&__input,
+	&__select {
+		display: block;
+		width: 100%;
+		height: var(--sss-input-height, rem(44));
+		border-bottom: 1px solid var(--sss-text-tertiary);
+		background: transparent;
+		font-size: rem(20);
+		color: var(--sss-input-placeholder-color, var(--sss-text-primary));
+		transition:
+			border-color var(--sss-transition-time),
+			color var(--sss-transition-time);
+
+		&::placeholder {
+			font-family: inherit;
+			font-size: inherit;
+			color: var(--sss-input-placeholder-color, inherit);
+			transition:
+				color var(--sss-transition-time),
+				opacity var(--sss-transition-time);
+		}
+
+		&._form-focus {
+			border-color: var(--sss-bg-accent);
+			outline: none;
+		}
+
+		&._form-error {
+			--sss-input-placeholder-color: var(--sss-error);
+
+			border-color: var(--sss-error);
+		}
+	}
+
+	&__select {
+		color: var(--sss-input-placeholder-color, var(--sss-text-primary));
+	}
+}
+
+.form-label {
+	display: grid;
+	gap: rem(4);
+	cursor: pointer;
+}
+
+.form-error-text {
+	grid-column: 1 / -1;
+	font-size: rem(14);
+	color: var(--sss-error);
+}
+
+.arrow-select {
+	position: absolute;
+	top: calc(var(--sss-input-height, rem(44)) / 2);
+	right: 0;
+	font-size: var(--sss-arrow-size, rem(15));
+	color: var(--sss-arrow-select-color, var(--sss-text-tertiary));
+	transform: translate(rem(-4), -50%);
+}
+
+.form-container__input,
+.form-container__select {
+	&:autofill,
+	&:autofill:hover,
+	&:autofill:focus,
+	&:autofill:active,
+	&:-webkit-autofill,
+	&:-webkit-autofill:hover,
+	&:-webkit-autofill:focus,
+	&:-webkit-autofill:active {
+		filter: none;
+		transition:
+			border-color var(--sss-transition-time),
+			background-color 600000s 0s,
+			color 600000s 0s;
+		-webkit-text-fill-color: var(--sss-text-primary);
+		caret-color: var(--sss-text-primary);
+	}
+}

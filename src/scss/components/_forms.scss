@@ -1,0 +1,42 @@
+@use '@scss/project-mixins' as *;
+@use '@scss/breakpoints' as breakpoint;
+
+.contact-form {
+	display: grid;
+	flex: 1 1 auto;
+
+	@include adaptiveValue('gap', 16, 40);
+
+	@include breakpoint.tab {
+		flex: 0 1 rem(640);
+	}
+
+	&__title {
+		text-align: center;
+
+		@include breakpoint.tab {
+			text-align: start;
+		}
+	}
+
+	&__body {
+		display: grid;
+		gap: rem(24);
+	}
+
+	&__button {
+		--sss-button-min-width: #{rem(217)};
+
+		justify-self: center;
+		width: 100%;
+		max-width: rem(300);
+
+		@include adaptiveValue('--sss-button-height', 48, 64);
+
+		@include breakpoint.tab {
+			justify-self: end;
+			width: auto;
+			max-width: unset;
+		}
+	}
+}

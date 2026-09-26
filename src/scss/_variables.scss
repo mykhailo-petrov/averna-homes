@@ -1,0 +1,15 @@
+@use '@scss' as *;
+@use '@scss/breakpoints' as breakpoint;
+
+:root {
+	--sss-font-primary: 'Arsenal', sans-serif;
+	--sss-font-secondary: 'El Messiri', sans-serif;
+	--sss-font-helper: 'Anek Tamil', sans-serif;
+	--sss-font-size: #{rem(20)};
+	--sss-transition-time: 300ms;
+	--sss-border-radius: 4px;
+	--sss-watcher-duration: 0.7s;
+	--sss-watcher-ease: cubic-bezier(0.22, 1, 0.36, 1);
+
+	@include adaptiveValue('--sss-header-height', 82, 138);
+}

@@ -1,0 +1,41 @@
+:root {
+	--sss-white: rgb(255 255 255);
+	--sss-bg-primary: linear-gradient(0deg, rgb(11 13 26) 0%, rgb(11 13 26) 100%), rgb(29 71 52);
+	--sss-bg-secondary: rgb(28 76 76);
+	--sss-bg-accent: rgb(196 159 88);
+	--sss-bg-disabled: rgb(255 255 255 0.5);
+	--sss-bg-inverse: rgb(221 223 228);
+	--sss-text-primary: rgb(255 255 255 / 0.9);
+	--sss-text-secondary: rgb(255 255 255 / 0.75);
+	--sss-text-tertiary: rgb(255 255 255 / 0.55);
+	--sss-text-accent: rgb(255 249 244);
+	--sss-text-inverse: rgb(32 29 24);
+	--sss-text-white: rgb(255 255 255);
+	--sss-text-gray: rgb(230 232 238);
+	--sss-text-disabled: rgb(255 255 255 / 0.25);
+	--sss-link-primary: rgb(0 0 0 / 0.45);
+	--sss-link-primary-hover: rgb(0 0 0 / 0.75);
+	--sss-link-primary-active: rgb(11 13 26 / 0.95);
+	--sss-link-secondary: rgb(255 255 255 / 0.75);
+	--sss-link-secondary-hover: rgb(255 255 255 / 0.75);
+	--sss-link-secondary-active: rgb(255 255 255 / 0.95);
+	--sss-link-accent: rgb(196 159 88);
+	--sss-link-inverse: rgb(28 76 76);
+	--sss-border: rgb(221 214 199);
+	--sss-overlay: rgb(0 0 0);
+	--sss-ripple: rgb(255 255 255);
+	--sss-rating-star-color: rgb(217 164 65);
+	--sss-quantity-border: rgb(166 166 166);
+	--sss-fullpage-bg: rgb(16 12 70);
+	--sss-fullpage-accent: rgb(125 114 201);
+	--sss-fullpage-glow: rgb(255 253 251);
+	--sss-warning: rgb(217 140 43);
+	--sss-error: rgb(193 68 58);
+	--sss-section-lines: linear-gradient(
+			90deg,
+			rgb(255 255 255 / 0.1) 0,
+			rgb(0 0 0 / 0.1) 1px,
+			transparent 1px
+		)
+		0 0 / 140px 100% repeat-x;
+}

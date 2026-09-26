@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="svg-filters" width="0" height="0" aria-hidden="true" focusable="false">
+	<filter id="wave" x="-0.1" y="-0.1" width="1.2" height="1.2" primitiveUnits="objectBoundingBox" color-interpolation-filters="sRGB">
+		<feTurbulence type="fractalNoise" baseFrequency="0.03 0.003" numOctaves="1" seed="1" result="noise">
+			<animate attributeName="seed" dur="7s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.0086;0.0171;0.0257;0.0343;0.0429;0.0514;0.06;0.0686;0.0771;0.0857;0.0943;0.1029;0.1114;0.12;0.1286;0.1371;0.1457;0.1543;0.1629;0.1714;0.18;0.1886;0.1971;0.2057;0.2143;0.2229;0.2286;1" values="1;8;15;22;29;36;43;50;57;64;71;78;85;92;99;106;113;120;127;134;141;148;155;162;169;176;183;1;1" />
+		</feTurbulence>
+		<feImage href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22100%22%20height%3D%22100%22%20preserveAspectRatio%3D%22none%22%3E%3ClinearGradient%20id%3D%22g%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23fff%22%20stop-opacity%3D%220%22%2F%3E%3Cstop%20offset%3D%220.3%22%20stop-color%3D%22%23fff%22%2F%3E%3Cstop%20offset%3D%220.7%22%20stop-color%3D%22%23fff%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23fff%22%20stop-opacity%3D%220%22%2F%3E%3C%2FlinearGradient%3E%3Crect%20width%3D%22100%22%20height%3D%22100%22%20fill%3D%22url(%23g)%22%2F%3E%3C%2Fsvg%3E" x="-0.35" y="0" width="0.35" height="1" preserveAspectRatio="none" result="band">
+			<animate attributeName="x" dur="7s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.2286;1" values="-0.35;1;1" keySplines="0.45 0 0.55 1;0 0 1 1" />
+		</feImage>
+		<feDisplacementMap in="SourceGraphic" in2="noise" scale="0.02" xChannelSelector="R" yChannelSelector="G" result="displaced" />
+		<feComposite in="displaced" in2="band" operator="in" result="displacedBand" />
+		<feComposite in="SourceGraphic" in2="band" operator="out" result="rest" />
+		<feMerge>
+			<feMergeNode in="rest" />
+			<feMergeNode in="displacedBand" />
+		</feMerge>
+	</filter>
+</svg>

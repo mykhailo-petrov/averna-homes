@@ -1,0 +1,168 @@
+.watcher-slide > *,
+.watcher-slide-own {
+	opacity: 0;
+	transition:
+		opacity var(--sss-transition-time),
+		translate var(--sss-transition-time);
+	translate: 0 -30%;
+}
+
+._watcher .watcher-slide > *,
+.watcher-slide._watcher > *,
+._watcher .watcher-slide-own,
+.watcher-slide-own._watcher {
+	opacity: 1;
+	translate: none;
+}
+
+.watcher-fade > *,
+.watcher-fade-own {
+	opacity: 0;
+	transition: opacity var(--sss-watcher-duration) var(--sss-watcher-ease);
+}
+
+._watcher .watcher-fade > *,
+.watcher-fade._watcher > *,
+._watcher .watcher-fade-own,
+.watcher-fade-own._watcher {
+	opacity: 1;
+}
+
+.watcher-slide-left > *,
+.watcher-slide-left-own,
+.watcher-slide-right > *,
+.watcher-slide-right-own {
+	opacity: 0;
+	transition:
+		opacity var(--sss-watcher-duration) var(--sss-watcher-ease),
+		translate var(--sss-watcher-duration) var(--sss-watcher-ease);
+}
+
+.watcher-slide-left > *,
+.watcher-slide-left-own {
+	translate: -3rem 0;
+}
+
+.watcher-slide-right > *,
+.watcher-slide-right-own {
+	translate: 3rem 0;
+}
+
+._watcher .watcher-slide-left > *,
+.watcher-slide-left._watcher > *,
+._watcher .watcher-slide-left-own,
+.watcher-slide-left-own._watcher,
+._watcher .watcher-slide-right > *,
+.watcher-slide-right._watcher > *,
+._watcher .watcher-slide-right-own,
+.watcher-slide-right-own._watcher {
+	opacity: 1;
+	translate: none;
+}
+
+.watcher-zoom > *,
+.watcher-zoom-own {
+	opacity: 0;
+	transition:
+		opacity var(--sss-watcher-duration) var(--sss-watcher-ease),
+		scale var(--sss-watcher-duration) var(--sss-watcher-ease);
+	scale: 0.85;
+}
+
+._watcher .watcher-zoom > *,
+.watcher-zoom._watcher > *,
+._watcher .watcher-zoom-own,
+.watcher-zoom-own._watcher {
+	opacity: 1;
+	scale: none;
+}
+
+.watcher-pop > *,
+.watcher-pop-own {
+	opacity: 0;
+	transition:
+		opacity var(--sss-watcher-duration) ease,
+		scale var(--sss-watcher-duration) cubic-bezier(0.34, 1.56, 0.64, 1);
+	scale: 0.6;
+}
+
+._watcher .watcher-pop > *,
+.watcher-pop._watcher > *,
+._watcher .watcher-pop-own,
+.watcher-pop-own._watcher {
+	opacity: 1;
+	scale: none;
+}
+
+.watcher-flip,
+:has(> .watcher-flip-own) {
+	perspective: 800px;
+}
+
+.watcher-flip > *,
+.watcher-flip-own {
+	opacity: 0;
+	transition:
+		opacity var(--sss-watcher-duration) var(--sss-watcher-ease),
+		rotate var(--sss-watcher-duration) var(--sss-watcher-ease);
+	rotate: x -70deg;
+}
+
+._watcher .watcher-flip > *,
+.watcher-flip._watcher > *,
+._watcher .watcher-flip-own,
+.watcher-flip-own._watcher {
+	opacity: 1;
+	rotate: none;
+}
+
+.watcher-blur > *,
+.watcher-blur-own {
+	filter: blur(12px);
+	opacity: 0;
+	transition:
+		filter var(--sss-watcher-duration) var(--sss-watcher-ease),
+		opacity var(--sss-watcher-duration) var(--sss-watcher-ease);
+}
+
+._watcher .watcher-blur > *,
+.watcher-blur._watcher > *,
+._watcher .watcher-blur-own,
+.watcher-blur-own._watcher {
+	filter: none;
+	opacity: 1;
+}
+
+.watcher-reveal > *,
+.watcher-reveal-own {
+	transition: clip-path calc(var(--sss-watcher-duration) * 1.4) var(--sss-watcher-ease);
+	clip-path: inset(0 100% 0 0);
+}
+
+._watcher .watcher-reveal > *,
+.watcher-reveal._watcher > *,
+._watcher .watcher-reveal-own,
+.watcher-reveal-own._watcher {
+	clip-path: inset(0);
+}
+
+.watcher-stagger {
+	@for $i from 1 through 12 {
+		& > :nth-child(#{$i}) {
+			transition-delay: #{($i - 1) * 100}ms;
+		}
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	[class*='watcher-'] > *,
+	[class*='watcher-'][class*='-own'] {
+		filter: none;
+		opacity: 1;
+		transition: none;
+		translate: none;
+		scale: none;
+		rotate: none;
+		clip-path: none;
+	}
+}

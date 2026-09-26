@@ -1,0 +1,72 @@
+<form id="contact-form" class="contact-form" novalidate>
+	<h2 class="contact-form__title title title--m">Get in touch here</h2>
+	<div class="contact-form__body">
+		<div class="form-container">
+			<input
+				class="form-container__input"
+				type="text"
+				name="name"
+				id="name"
+				placeholder="First and last name"
+				aria-label="First and last name"
+				autocomplete="name"
+				required
+			/>
+		</div>
+		<div class="form-container">
+			<select
+				class="form-container__select"
+				name="contactType"
+				id="contact-type"
+				aria-label="Contact type"
+				required
+			>
+				<option value="" selected disabled>Preferred contact type</option>
+				<option value="op1">Option 1</option>
+				<option value="op2">Option 2</option>
+			</select>
+
+			<span class="arrow-select _icon-arrow-down"></span>
+		</div>
+		<div class="form-container">
+			<input
+				class="form-container__input"
+				type="email"
+				name="email"
+				id="email"
+				placeholder="Email address"
+				aria-label="Email address"
+				autocomplete="email"
+				required
+			/>
+		</div>
+		<div class="form-container">
+			<input
+				class="form-container__input"
+				type="tel"
+				name="phone"
+				id="phone"
+				placeholder="Phone number"
+				aria-label="Phone number"
+				autocomplete="tel"
+				required
+			/>
+		</div>
+		<textarea
+			class="form-container__input"
+			name="message"
+			id="message"
+			rows="5"
+			placeholder="Message"
+			aria-label="Message"
+		></textarea>
+		<label class="checkbox-label" for="privacy">
+			<input class="checkbox" type="checkbox" name="privacy" id="privacy" value="1" required />
+			<span class="checkbox-label__text"
+				>By submitting this form, you confirm that you have read and agree to El Messiri
+				<a href="#" class="link link--accent">Privacy Statement</a>.</span
+			>
+		</label>
+	</div>
+	<button type="submit" class="button contact-form__button">Send message</button>
+</form>

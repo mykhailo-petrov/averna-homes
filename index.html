@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="format-detection" content="telephone=no" />
+		<link rel="icon" href="/favicon.ico" />
+		<title>El Messiri — Averna Homes</title>
+		<meta
+			name="description"
+			content="El Messiri builds houses designed around people: property appraisal, sales, purchases and investments, with generations of expertise since 1988."
+		/>
+	</head>
+	<body>
+		<load src="./src/assets/img/icons/wave-filter.svg" />
+
+		<div class="wrapper">
+			<load src="./src/partials/header.html" />
+
+			<main class="page">
+				<section class="hero">
+					<div class="hero__container" data-wave>
+						<h1 class="hero__title title title--xl">
+							Building houses that feel like home - by design.
+						</h1>
+						<p class="hero__description">
+							Our international brand specializes in property appraisal, sales, purchases, and
+							investments. Trust us to deliver exceptional service and help you find your perfect
+							real estate opportunity.
+						</p>
+						<picture class="hero__decor">
+							<source srcset="@img/hero/stamp.webp" type="image/webp" />
+							<img src="@img/hero/stamp.png" class="hero__stamp" alt="" width="360" height="360" />
+						</picture>
+						<picture class="hero__picture">
+							<source srcset="@img/hero/hero-image.webp" type="image/webp" />
+							<img
+								src="@img/hero/hero-image.jpg"
+								class="hero__image"
+								alt="Living room interior with a blue sofa and a wooden coffee table"
+								width="1112"
+								height="1492"
+							/>
+						</picture>
+					</div>
+				</section>
+				<section class="at-room">
+					<div class="at-room__container">
+						<div class="at-room__head">
+							<div class="at-room__content watcher-zoom-own" data-watcher="0.5,0px,once">
+								<div class="title-block">
+									<span class="title-block__icon _icon-star"></span>
+									<h2 class="title-block__title title title--m">Right At Home</h2>
+								</div>
+								<p class="at-room__description">
+									We build houses designed with more of what you need (like natural light) and less
+									of what you don’t (like sneaky add-ons). From your first sit down with us, you’ll
+									feel the Inland difference.
+								</p>
+							</div>
+
+							<ul class="at-room__list watcher-zoom-own" data-watcher="0.5,0px,once">
+								<li class="at-room__item item-at-room">
+									<span class="item-at-room__decor">
+										<span class="_icon-star"></span>
+									</span>
+									<h3 class="item-at-room__title title title--xs">Home made personal</h3>
+									<div class="item-at-room__description">
+										Experience the ease and transparency of building with people-people (that’s us).
+									</div>
+								</li>
+								<li class="at-room__item item-at-room">
+									<span class="item-at-room__decor">
+										<span class="_icon-star"></span>
+									</span>
+									<h3 class="item-at-room__title title title--xs">Generations of expertise</h3>
+									<div class="item-at-room__description">
+										Partner with a family-owned and operated company, building locally since 1988.
+									</div>
+								</li>
+								<li class="at-room__item item-at-room">
+									<span class="item-at-room__decor">
+										<span class="_icon-star"></span>
+									</span>
+									<h3 class="item-at-room__title title title--xs">Design you can feel</h3>
+									<div class="item-at-room__description">
+										Discover thoughtful floor plans that put people first.
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div
+							class="at-room__block-video video-room watcher-zoom-own"
+							data-watcher="0.5,0px,once"
+						>
+							<button type="button" class="video-room__play" aria-label="Play video"></button>
+							<h2 class="video-room__poster-title title title--l">Your home is our home</h2>
+							<video
+								class="video-room__video"
+								playsinline
+								preload="metadata"
+								poster="@img/at-room/video-poster.jpg"
+							>
+								<source src="" type="video/webm" />
+								<source src="" type="video/mp4" />
+								<p>Your browser doesn't support HTML5 video. <a href="">Download the video</a>.</p>
+							</video>
+						</div>
+					</div>
+				</section>
+				<section class="about">
+					<div class="about__grid-body">
+						<div class="about__decor"></div>
+						<section class="available">
+							<div class="available__grid-body">
+								<div class="available__content available__content--top" data-watcher="0.3,0px,once">
+									<div class="available-text-block watcher-slide-left">
+										<div class="available-text-block__content">
+											<div class="title-block available-text-block__title-block">
+												<span class="title-block__icon _icon-star"></span>
+												<h2 class="title-block__title title title--m">Explore available homes</h2>
+											</div>
+											<p class="available-text-block__description">
+												We build homes that range from 1,400 to 3,500 square feet. No matter how
+												much space you need, all of our move-in ready homes are designed to welcome
+												you to the good life.
+											</p>
+											<button type="button" class="button available-text-block__button">
+												Find your home
+											</button>
+										</div>
+									</div>
+
+									<div class="available__slider watcher-slide-right">
+										<load src="./src/partials/sliders/available-slider.html" />
+									</div>
+								</div>
+								<div
+									class="available__content available__content--bottom"
+									data-watcher="0.3,0px,once"
+								>
+									<picture class="available__picture watcher-slide-right">
+										<source srcset="@img/available/available-img.webp" type="image/webp" />
+										<img
+											src="@img/available/available-img.jpg"
+											class="available__image"
+											alt="Floor plans, fabric and color samples for a home interior"
+											width="1112"
+											height="1492"
+											loading="lazy"
+										/>
+									</picture>
+									<div class="available-text-block watcher-slide-left">
+										<div class="available-text-block__content">
+											<div class="title-block available-text-block__title-block">
+												<span class="title-block__icon _icon-star"></span>
+												<h2 class="title-block__title title title--m">Partner With El Messiri</h2>
+											</div>
+											<p class="available-text-block__description">
+												We’re always looking for outstanding new building and market partners who
+												are focused on quality as much as we are. Find out how to get in touch with
+												us here.
+											</p>
+											<button type="button" class="button available-text-block__button">
+												Learn more
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+						<section class="reviews">
+							<div class="reviews__container">
+								<load src="./src/partials/sliders/reviews-slider.html" />
+							</div>
+						</section>
+					</div>
+				</section>
+				<section class="contacts">
+					<div class="contacts__container">
+						<load src="./src/partials/forms/contact-form.html" />
+						<div class="contact-info">
+							<h2 class="contact-info__title title title--m">El Messiri</h2>
+							<div class="contact-info__items">
+								<div class="contact-info__item item-contact-info">
+									<div class="item-contact-info__title">Contact</div>
+									<div class="item-contact-info__fields">
+										<div class="item-contact-info__field">(08) 9373 3999</div>
+										<div class="item-contact-info__field">sale@elmessiri.com.au</div>
+									</div>
+								</div>
+								<div class="contact-info__item item-contact-info">
+									<div class="item-contact-info__title">Office</div>
+									<div class="item-contact-info__fields">
+										<div class="item-contact-info__field">Level 1, 54 Belgravia Street,</div>
+										<div class="item-contact-info__field">Belmont, WWA 6104</div>
+									</div>
+								</div>
+								<div class="contact-info__item item-contact-info">
+									<div class="item-contact-info__title">Social</div>
+									<div class="item-contact-info__fields">
+										<div class="item-contact-info__field">Instagram</div>
+										<div class="item-contact-info__field">Facebook</div>
+										<div class="item-contact-info__field">Linked</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+
+			<load src="./src/partials/footer.html" />
+		</div>
+
+		<script type="module" src="/src/main.js"></script>
+	</body>
+</html>

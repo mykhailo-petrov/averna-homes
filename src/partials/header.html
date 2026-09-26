@@ -1,0 +1,47 @@
+<header class="header">
+	<div class="header__container">
+		<a href="#" class="header__logo">
+			<div class="header__image">
+				<img src="@img/logo.svg" alt="" width="82" height="82" />
+			</div>
+
+			<span class="header__name">EL Messiri</span>
+		</a>
+		<nav class="header__menu menu">
+			<ul class="menu__list" data-menu>
+				<li class="menu__item _active" data-menu-item>
+					<a href="#" class="menu__link">home</a>
+				</li>
+				<li class="menu__item" data-menu-item>
+					<a href="#" class="menu__link">about us</a>
+				</li>
+				<li class="menu__item" data-menu-item>
+					<a href="#" class="menu__link">our approach</a>
+				</li>
+				<li class="menu-dropdown" data-dropdown>
+					<div class="menu-dropdown__trigger" data-dropdown-item data-dropdown-trigger>
+						<a href="#" class="menu-dropdown__drop-link"> portfolio </a>
+						<span class="menu-dropdown__arrow _icon-arrow-down"></span>
+					</div>
+
+					<ul class="menu-dropdown__inner-items">
+						<li class="menu-dropdown__item" data-dropdown-item>
+							<a href="#" class="menu-dropdown__link">project 1</a>
+						</li>
+						<li class="menu-dropdown__item" data-dropdown-item>
+							<a href="#" class="menu-dropdown__link">project 2</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+
+		<button type="button" data-da=".menu__list,767" data-ripple class="header__button button">
+			Contract Us
+		</button>
+
+		<button type="button" class="header__burger burger-menu" aria-label="Menu">
+			<span></span>
+		</button>
+	</div>
+</header>
