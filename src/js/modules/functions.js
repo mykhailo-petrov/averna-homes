@@ -1,4 +1,3 @@
-export * from './body-lock.js';
 export * from './burger-menu.js';
 export * from './ripple-effect.js';
 export * from './mobile-detect.js';
